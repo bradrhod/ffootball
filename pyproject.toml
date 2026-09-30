@@ -1,0 +1,21 @@
+[project]
+name = "ffootball"
+version = "0.1.0"
+description = "Personal read-only analysis of my Yahoo Fantasy Football leagues"
+readme = "README.md"
+authors = [
+    { name = "Brad Rhodes", email = "bradrhod@hotmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.0.6",
+    "requests>=2.34.2",
+    "yahoo-oauth>=2.1.1",
+]
+
+[project.scripts]
+ffootball = "ffootball:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
